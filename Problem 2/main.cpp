@@ -10,11 +10,25 @@ std::vector<int> reverseVector(const std::vector<int>& input) {
 }
 
 int main() {
-    // Example usage
-    std::vector<int> input = {1, 2, 3, 4, 5};
+    int n;
+
+    // Input: number of elements in the array
+    std::cout << "Enter the number of elements: ";
+    std::cin >> n;
+
+    std::vector<int> input(n);
+
+    // Input: elements of the array
+    std::cout << "Enter " << n << " numbers: ";
+    for (int i = 0; i < n; ++i) {
+        std::cin >> input[i];
+    }
+
+    // Reverse the vector
     std::vector<int> output = reverseVector(input);
 
-    // Print the reversed vector
+    // Output: print the reversed vector
+    std::cout << "Reversed array: ";
     for (int num : output) {
         std::cout << num << " ";
     }
