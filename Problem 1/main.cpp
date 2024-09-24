@@ -20,7 +20,7 @@ int main() {
 
     // Print the result
     for (const auto& str : result) {
-        std::cout << str << std::endl;
+        std::cout << str << ' ';
     }
 
     return 0;
